@@ -1,6 +1,6 @@
 {
     "eslint.enable": true,
-    "prettier.enable": true,
+    "prettier.enable": false,
     "editor.formatOnSave": true,
     "eslint.alwaysShowStatus": true,
     "eslint.format.enable": true

@@ -1,43 +1,47 @@
 // eslint-disable-next-line no-undef
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true
+  env: {
+    browser: true,
+    es2021: true,
   },
-  'extends': [
+  extends: [
+    'prettier',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier'
   ],
-  'parser': '@typescript-eslint/parser',
-  'parserOptions': {
-    'ecmaVersion': 'es6',
-    'sourceType': 'module'
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'es6',
+    sourceType: 'module',
   },
-  'plugins': [
+  plugins: [
     '@typescript-eslint',
-    'unused-imports'
+    'unused-imports',
+    'json-format'
   ],
-  'rules': {
+  rules: {
     'sort-imports': [
       'error',
       {
-        'ignoreDeclarationSort': true
-      }
+        ignoreDeclarationSort: true,
+      },
     ],
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'error',
       {
-        'vars': 'all',
-        'varsIgnorePattern': '^_',
-        'args': 'after-used',
-        'argsIgnorePattern': '^_'
-      }
+        vars: 'all',
+        varsIgnorePattern: '^_',
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+      },
     ],
     '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-    'indent': [
+    '@typescript-eslint/consistent-type-definitions': [
+      'error',
+      'type'
+    ],
+    indent: [
       'error',
       2
     ],
@@ -45,13 +49,21 @@ module.exports = {
       'error',
       'unix'
     ],
-    'quotes': [
+    quotes: [
       'error',
       'single'
     ],
-    'semi': [
+    semi: [
       'error',
       'never'
-    ]
-  }
+    ],
+    'array-element-newline': [
+      'error',
+      'always'
+    ],
+    'array-bracket-newline': [
+      'error',
+      'always'
+    ],
+  },
 }

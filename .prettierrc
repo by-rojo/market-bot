@@ -1,8 +1,9 @@
 {
-    "semi": false,
-    "singleQuote": true,
-    "arrowParens": "avoid",
-    "singleAttributePerLine": true,
-    "useTabs": false,
-    "tabWidth": 2
-  }
+  "semi": false,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "singleAttributePerLine": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "bracketSameLine": false
+}

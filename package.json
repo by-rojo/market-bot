@@ -2,33 +2,34 @@
   "name": "market-bot",
   "version": "0.0.1",
   "description": "affiliate marketing bot",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "jest",
-    "start": "ts-node ./src/index.ts",
-    "lint": "eslint --fix --ext .js,.ts",
-    "prepare": "husky install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/by-rojo/market-bot.git"
-  },
   "keywords": [
     "marketing",
     "affiliate",
     "bot"
   ],
-  "author": "Roe Greene",
-  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/by-rojo/market-bot#readme",
   "bugs": {
     "url": "https://github.com/by-rojo/market-bot/issues"
   },
-  "homepage": "https://github.com/by-rojo/market-bot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/by-rojo/market-bot.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Roe Greene",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint --fix --ext .js,.ts",
+    "prepare": "husky install",
+    "start": "ts-node ./src/index.ts",
+    "test": "jest"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
