@@ -1,0 +1,24 @@
+{
+  "name": "market-bot",
+  "version": "0.0.1",
+  "description": "affiliate marketing bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/by-rojo/market-bot.git"
+  },
+  "keywords": [
+    "marketing",
+    "affiliate",
+    "bot"
+  ],
+  "author": "Roe Greene",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/by-rojo/market-bot/issues"
+  },
+  "homepage": "https://github.com/by-rojo/market-bot#readme"
+}
