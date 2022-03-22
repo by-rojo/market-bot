@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 const favoriteFruits: string[] = [
   'apple',
   'strawberry',
