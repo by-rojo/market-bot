@@ -1,14 +1,3 @@
 import 'dotenv/config'
-
-const favoriteFruits: string[] = [
-  'apple',
-  'strawberry',
-  'orange'
-]
-
-function addFruit(fruit: string) {
-  favoriteFruits.push(fruit)
-}
-
-addFruit('test')
+console.warn('this is just a tempate for entry')
 process.exit()
