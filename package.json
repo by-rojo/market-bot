@@ -17,12 +17,11 @@
   },
   "license": "GPL-3.0-or-later",
   "author": "Roe Greene",
-  "type": "module",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint --fix --ext .js,.ts",
     "prepare": "husky install",
-    "scrape": "ts-node ./src/scripts/scraper/index.ts",
+    "scrape": "npx ts-node --esm ./src/scripts/scraper/index.ts",
     "start": "ts-node ./src/index.ts",
     "test": "jest"
   },

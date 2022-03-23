@@ -1,5 +1,11 @@
+import { WHITELIST } from './constants'
 const scraper = (): boolean => {
-  console.log('whoooooohoooo')
+  WHITELIST.map(
+    url => {
+      console.log(url)
+    }
+  )
+  process.stdout.write('whoooooohoooo')
   return false
 }
 
