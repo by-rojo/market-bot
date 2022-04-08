@@ -19,17 +19,25 @@
   "author": "Roe Greene",
   "main": "src/index.js",
   "scripts": {
+    "example": "npx ts-node --esm ./src/scripts/example/index.ts",
     "lint": "eslint --fix --ext .js,.ts",
     "prepare": "husky install",
-    "scrape": "npx ts-node --esm ./src/scripts/scraper/index.ts",
+    "products:all": "npm run products:outdoors & npm run products:home",
+    "products:home": "AMAZON_SEARCH_INDEX=HomeAndKitchen AMAZON_KEYWORDS=RV npx ts-node --esm ./src/scripts/product/index.ts",
+    "products:outdoors": "AMAZON_SEARCH_INDEX=SportsAndOutdoors AMAZON_KEYWORDS=RV npx ts-node --esm ./src/scripts/product/index.ts",
     "start": "ts-node ./src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "tutorials": "npx ts-node --esm ./src/scripts/tutorials/index.ts"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "paapi5-nodejs-sdk": "^1.1.0",
+    "wpapi": "^1.2.2"
   },
   "devDependencies": {
+    "@types/wpapi": "^1.1.1",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^8.11.0",
