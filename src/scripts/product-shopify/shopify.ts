@@ -22,7 +22,7 @@ Shopify.Context.initialize({
 
 const createProduct = async (data: SearchData): Promise<void>  => {
   if(!data) {
-    const client = new Shopify.Clients.Rest(SHOPIFY_SHOP, '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')
+    const client = new Shopify.Clients.Rest(SHOPIFY_SHOP, '')
     const product = {
       metafields: [
         {
