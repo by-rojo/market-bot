@@ -22,10 +22,11 @@
     "example": "npx ts-node --esm ./src/scripts/example/index.ts",
     "lint": "eslint --fix --ext .js,.ts",
     "prepare": "husky install",
-    "products:all": "npm run products:outdoors & npm run wp:products:home & npm run wp:products:appliance & npm run wp:products:books & npm run wp:products:electronics & npm run wp:products:other & npm run wp:products:handmade & npm run wp:products:industrial & npm run wp:products:mobile & npm run wp:products:pets & npm run wp:products:tools & npm run wp:products:toys",
+    "shopify:products:all": "npx ts-node --esm ./src/scripts/product-shopify/index.ts",
     "start": "ts-node ./src/index.ts",
     "test": "jest",
     "tutorials": "npx ts-node --esm ./src/scripts/tutorials/index.ts",
+    "wp:products:all": "npm run products:outdoors & npm run wp:products:home & npm run wp:products:appliance & npm run wp:products:books & npm run wp:products:electronics & npm run wp:products:other & npm run wp:products:handmade & npm run wp:products:industrial & npm run wp:products:mobile & npm run wp:products:pets & npm run wp:products:tools & npm run wp:products:toys",
     "wp:products:appliance": "AMAZON_SEARCH_INDEX=Appliances AMAZON_KEYWORDS=RV npx ts-node --esm ./src/scripts/product-wp/index.ts",
     "wp:products:books": "AMAZON_SEARCH_INDEX=Books AMAZON_KEYWORDS=RV npx ts-node --esm ./src/scripts/product-wp/index.ts",
     "wp:products:electronics": "AMAZON_SEARCH_INDEX=Electronics AMAZON_KEYWORDS=RV npx ts-node --esm ./src/scripts/product-wp/index.ts",
@@ -40,6 +41,7 @@
     "wp:products:toys": "AMAZON_SEARCH_INDEX=ToysAndGames AMAZON_KEYWORDS=RV npx ts-node --esm ./src/scripts/product-wp/index.ts"
   },
   "dependencies": {
+    "@shopify/shopify-api": "^3.0.0",
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
     "dotenv": "^16.0.0",
